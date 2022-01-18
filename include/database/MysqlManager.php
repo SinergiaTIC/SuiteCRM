@@ -110,7 +110,7 @@ class MysqlManager extends DBManager
     protected $maxNameLengths = array(
         'table' => 64,
         'column' => 64,
-        'index' => 64,
+        'index' => 59,
         'alias' => 256
     );
 
