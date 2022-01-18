@@ -558,7 +558,7 @@ class AbstractRelationship
         
         // finally, wrap up with section 4, the indices on the join table
         
-        $indexBase = $this->getValidDBName($relationshipName) ;
+        $indexBase = DBManagerFactory::getInstance()->getValidDBName($relationshipName, true, 'index');
         $properties [ 'indices' ] [] = array( 'name' => $indexBase . 'spk' , 'type' => 'primary' , 'fields' => array( 'id' ) ) ;
 
         switch ($relationshipType) {
