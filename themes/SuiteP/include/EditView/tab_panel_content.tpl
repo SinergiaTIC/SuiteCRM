@@ -7,9 +7,9 @@
                 {*column*}
                 {*<!-- COLUMN -->*}
                 {{if $smarty.foreach.colIteration.total > 1 && $colData.colspan != 3}}
-                    <div class="col-xs-12 col-sm-6 edit-view-row-item" data-field="{{$colData.field.name}}">
+                    <div class="col-xs-12 col-sm-6 edit-view-row-item">
                 {{else}}
-                    <div class="col-xs-12 col-sm-12 edit-view-row-item" data-field="{{$colData.field.name}}">
+                    <div class="col-xs-12 col-sm-12 edit-view-row-item">
                 {{/if}}
 
                 {{counter name="fieldCount" start=0 print=false assign="fieldCount"}}
