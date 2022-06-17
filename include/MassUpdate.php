@@ -1297,6 +1297,7 @@ EOQ;
     public function addDatetime($displayname, $varname)
     {
         global $timedate;
+        $displayname = addslashes($displayname);
         $userformat = $timedate->get_user_time_format();
         $cal_dateformat = $timedate->get_cal_date_format();
         global $app_strings, $app_list_strings, $theme;
